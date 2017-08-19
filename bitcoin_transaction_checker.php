@@ -82,9 +82,9 @@ $confirmation_code = array(
     "OK" => "<font color=green>THIS TX HAVE ".$confirmations."! This is safe!</font>",
     "NO" => "<font color=red>WARNING! THIS HAVE 0 CONFIRMATIONS! THIS IS NOT SAFE! WAIT FOR MORE CONFIRMATIONS!</font>",
     "ALMOST" => "<font color=orange>Uhm... this have ".$confirmations." confirmations. Wait for 6 to be 100% sure</font>",
-    "WAIT_MORE" => "<font color=orange>YOU HAVE 3 CONFIRMATIONS. WAIT MORE TO BE SURE.",
-    "NOT_SURE" => "<font color=red>THIS TX HAVE ".$confirmations." CONFIRMATIONS! NOW THIS IS NOT SAFE AT 100%. Wait for more.",
-    "OVERNINETHOUSAND_SAFE" => "<font color=green>THIS TX HAVE ".$confirmations." CONFIRMATIONS! THIS IS 9000% SAFE!"
+    "WAIT_MORE" => "<font color=orange>YOU HAVE 3 CONFIRMATIONS. WAIT MORE TO BE SURE.</font>",
+    "NOT_SURE" => "<font color=red>THIS TX HAVE ".$confirmations." CONFIRMATIONS! NOW THIS IS NOT SAFE AT 100%. Wait for more.</font>",
+    "OVERNINETHOUSAND_SAFE" => "<font color=green>THIS TX HAVE ".$confirmations." CONFIRMATIONS! THIS IS OVER 9000% SAFE!</font>"
 );
 
 // Realtime option
