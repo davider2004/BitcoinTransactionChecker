@@ -104,6 +104,13 @@ $realtime_code = array(
     "DISABLED" => "<a href=?TxID=".$TxID."&realtime=yes>Enable</a>/<b><font color=red>Disabled</font></b>",
     "ENABLED" => "<b><font color=green>Enabled (REFRESH TIME: 1s)</a></b>/<a href=?TxID=".$TxID."&realtime=no>Disable</a>" 
 );
+
+// Show API
+$ShowApiExtract = $_GET['ShowApiExtract'];
+
+if (!$ShowApiExtract == "yes") {
+    exit(file_get_contents($BlockExplorerAPILink));
+}
 ?>
 
 
@@ -173,8 +180,10 @@ $realtime_code = array(
             <p><b>Script type:</b> <?php print $scripto_type; ?>press on "View on block explorer"</p>
             <p></p>
             <p><b>Realtime:</b> <?php print $realtime_code[$realtime_stat]; ?></p>
+            <p><b><a href="<?php print $ThisLink."?ShowApiExtract=yes"; ?>" target="_blank">See the JSON</a></b></p>
             <p><b><a href="<?php print $BlockExplorerAPILink; ?>" target="_blank">See the JSON from the block explorer APIs</a></b></p>
             <p><b><a href="<?php print $TxLink; ?>" target="_blank">View on block explorer for more informations (BlockCypher LIVE)</a></b></p>
+            <p><b><a href="https://github.com/davider2004/BitcoinTransactionChecker?utm_source=orig_software&utm_medium=link&utm_campaign=bitcointransactionchecker&utm_term=bitcointransactionchecker&utm_content=ads1035585" target="_blank">See this on Github!</a></b></p>
         </center>
     </div>
 </body>
