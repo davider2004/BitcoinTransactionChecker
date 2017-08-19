@@ -63,7 +63,7 @@ $scripto = $outputs['script'];
 $scripto_type = $outputs['script_type'];
 
 // Confirmations test
-if ($confirmations > 5) {
+if ($confirmations > 5 and $confirmations < 30) {
     $safe = "OK";
 }elseif ($confirmations == 0) {
     $safe = "NO";
