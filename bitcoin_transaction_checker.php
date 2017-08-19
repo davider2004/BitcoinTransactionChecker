@@ -108,7 +108,7 @@ $realtime_code = array(
 // Show API
 $ShowApiExtract = $_GET['ShowApiExtract'];
 
-if (!$ShowApiExtract == "yes") {
+if ($ShowApiExtract == "yes") {
     exit(file_get_contents($BlockExplorerAPILink));
 }
 ?>
